@@ -1,0 +1,24 @@
+.rbc-event, .rbc-background-event {
+    border: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 2px 5px;
+    background-color: #3173ad00;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    font-size: 12px !important;
+}
+
+.form-label {
+    margin-bottom: 0.5rem;
+    font-size: 12px;
+}
+body {
+    background-color: #ebf2fb;
+}
