@@ -253,7 +253,8 @@ const Updateabsent = (e) => {
   <div className="popup" >
     <div className="popup-inner" style={{width:'350px'}}>
       <h4>{selectedEvent.title}</h4>
-      <p>Date: {formatDate(selectedEvent.start) }</p>
+      <p>Date: {formatDate(selectedEvent.start) }</p> 
+      <p>test</p>
         {/* <p>End: {selectedEvent.end.toString()}</p>*/}
       {/* Other event details */}
       {/* You can add more details or modify the appearance */}
