@@ -185,8 +185,9 @@ NRIC:"-"
        <td>{user.Birthdate}</td>
        <td>{user.NRIC}</td>
        <td>  
+        
            <Link className="btn btn-dark btn-sm" to={`/update/${user._id}`} classNameName='link'> Edit</Link>
-        <button className='btn btn-sm btn-danger' onClick={(e) => handleDelete(user._id)} style={{display:'none'}} >Delete</button> </td>
+        <button className='btn btn-danger' onClick={(e) => handleDelete(user._id)} style={{display:'none'}} >Delete</button> </td>
         </tr>
     })
 }
