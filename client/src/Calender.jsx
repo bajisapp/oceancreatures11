@@ -259,7 +259,7 @@ const Updateabsent = (e) => {
         {/* <p>End: {selectedEvent.end.toString()}</p>*/}
       {/* Other event details */}
       {/* You can add more details or modify the appearance */}
-      <h6>Remarks:</h6>
+      <h6>Remarks ab:</h6>
       <textarea className='form-control' value={Remarks}  onChange={(e) => setRemarks(e.target.value)}>
   
 </textarea>
