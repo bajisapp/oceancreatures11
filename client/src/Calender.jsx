@@ -189,7 +189,7 @@ const Updateabsent = (e) => {
   e.preventDefault();
   const _id = selectedEvent._id;
   const Statusresult = 'absent';
-  const remarksData = { Status: Statusresult, Remarks: Remarks }; // Assuming Remarks is defined
+  const remarksData = { Status: Statusresult, Remarks: Remarks }; 
 
   axios
       .put(`http://localhost:3002/updateattendance/${_id}`, remarksData)
@@ -261,7 +261,7 @@ const Updateabsent = (e) => {
       <div style={{fontSize:'12px',display:'none', marginBottom:'10px'}}>
         <strong style={{}}>Event ID:</strong> {selectedEvent._id}
       </div>
-      {/* Add more event details here as needed */}
+
       <button onClick={closePopup} className='btn btn-sm btn-dark' style={{marginRight:'10px', marginTop:'5px'}} > <svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" fill="currentColor" class="bi bi-x-mg" viewBox="0 0 16 16">
   <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
 </svg> Close </button>

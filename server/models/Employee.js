@@ -13,6 +13,7 @@ const EmployeeSchema = new mongoose.Schema({
     "ClassDuration": String,
 
     "Status" : String,
+    
     "Remarks" : String
 })
 
