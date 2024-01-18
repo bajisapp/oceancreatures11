@@ -3,7 +3,7 @@
   "name": "client",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://bajisapp.github.io/oceancreaturesv5/",
+  "homepage": "https://bajisapp.github.io/oceancreatures11/",
   "type": "module",
   "scripts": {
     "dev": "vite",

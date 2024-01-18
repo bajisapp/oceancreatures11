@@ -214,6 +214,7 @@ const Updateabsent = (e) => {
 
       <div class="row">
     <div class="col-2">
+      <h6>test</h6>
 
     </div>
     <div class="col-8">
