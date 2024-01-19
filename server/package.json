@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "build": "npm i"
-    
+    "test": "echo \"Error: no test specified\" && exit 1",  
+    "build": "npm i"     
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "bin" : {
+    "execute" : "index.js"
+} ,
   "dependencies": {
     "bcrypt": "^5.1.1",
     "cookie-parser": "^1.4.6",
