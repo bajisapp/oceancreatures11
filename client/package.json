@@ -1,5 +1,4 @@
 {
-
   "name": "client",
   "private": true,
   "version": "0.0.0",
@@ -11,7 +10,6 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "deploy" : "gh-pages -d dist",
     "predeploy": "npm run build"
-
   },
   "dependencies": {
     "@aldabil/react-scheduler": "^2.8.0",
