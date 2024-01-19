@@ -22,3 +22,18 @@
 body {
     background-color: #ebf2fb;
 }
+.popup {
+    position: fixed;
+    left: 50%;
+    margin-top: 20%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255);
+    width: 80%;
+    max-width: 400px;
+    max-height: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 999;
+    color: rgb(0, 0, 0);
+    border: 2px solid #ddd;
+  }

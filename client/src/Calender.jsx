@@ -10,6 +10,7 @@ import './time.css';
 
 
 
+
 function Calender() {
 
   const [Remarks, setRemarks] = useState(''); // State to capture remarks
@@ -173,8 +174,8 @@ console.log(formattedEndTime); // Output: 20:30:00
             console.log('Status:', Statusresult);
             console.log(remarksData.Remarks);
             console.log('test');
-            alert('Submitted, Click on OK button to proceed.');
-            navigate('/calender');
+       alert('Submitted, Click on OK button to proceed.');
+            navigate('/schedulerList');
 
         })
         .catch((err) => {
@@ -197,7 +198,7 @@ const Updateabsent = (e) => {
           console.log(remarksData.Remarks);
           console.log('test');
           alert('Submitted, Click on OK button to proceed.');
-          navigate('/calender');
+          navigate('/schedulerList');
       })
       .catch((err) => {
           console.error('Error updating attendance:', err);
