@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import UpdateUser from './UpdateUser'
-import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router-dom'
 import 'react-calendar/dist/Calendar.css';
 
@@ -214,8 +212,7 @@ const Updateabsent = (e) => {
 
       <div class="row">
     <div class="col-2">
-      <h6>test</h6>
-
+  
     </div>
     <div class="col-8">
 <div style={{backgroundColor:'#fff', padding:'10px'}}>
