@@ -8,7 +8,7 @@ import Home from './Home'
 import CreateUser from './CreateUser'
 import UpdateUser from './UpdateUser'
 import Attendance from './Attendance'
-import Calender from './calender'
+import Calender from './Calender'
 import BigCalendar from './BigCalendar'
 import BitScheduler from './BitScheduler'
 
