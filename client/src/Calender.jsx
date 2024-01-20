@@ -175,7 +175,7 @@ console.log(formattedEndTime); // Output: 20:30:00
             console.log('Status:', Statusresult);
             console.log(remarksData.Remarks);
             console.log('test');
-       alert('Submitted, Click on OK button to proceed.');
+            alert('Submitted, Click on OK button to proceed.');
             navigate('/schedulerList');
 
         })
