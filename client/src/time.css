@@ -23,17 +23,18 @@ body {
     background-color: #ebf2fb;
 }
 .popup {
-    position: fixed;
+    position: absolute;
     left: 50%;
-    margin-top: 20%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255);
+    margin-top: -30%;
+    transform: translate(-50%,-50%);
+    background-color: #000;
+    color: #fff;
     width: 80%;
     max-width: 400px;
     max-height: 300px;
     padding: 20px;
     border-radius: 8px;
-    z-index: 999;
-    color: rgb(0, 0, 0);
-    border: 2px solid #ddd;
+    z-index: 5000;
+    color: #fff;
+    border: 2px solid #9E9E9E;
   }
