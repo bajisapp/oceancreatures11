@@ -48,7 +48,7 @@
   transition: all 0.3s ease-in-out;
 }
 
-/* Modal.css */
+/* Modal.css
 .modal {
   display: none;
   position: fixed;
@@ -68,7 +68,7 @@
   border: 1px solid #888;
   width: 80%;
   max-width: 600px;
-}
+} */
 
 .close {
   color: #aaa;
