@@ -162,7 +162,6 @@ console.log(formattedEndTime); // Output: 20:30:00
   };
 
   const Update = (e) => {
-
     e.preventDefault();
     const _id = selectedEvent._id;
     const Statusresult = 'present';
