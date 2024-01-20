@@ -161,6 +161,7 @@ console.log(formattedEndTime); // Output: 20:30:00
   };
 
   const Update = (e) => {
+    alert('Submitted, Click on OK button to proceed.');
     e.preventDefault();
     const _id = selectedEvent._id;
     const Statusresult = 'present';
