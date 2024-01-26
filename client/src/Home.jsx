@@ -17,7 +17,7 @@ function Home() {
     const [result, setUsers] = useState([])
 
     useEffect(() => {
-      axios.get('http://localhost:3002/getUsers')
+      axios.get('https://oceancreaturesv10.onrender.com/getUsers')
         .then(response => {
           setUsers(response.data);
         })
