@@ -21,7 +21,7 @@ function Attendance() {
  
 
    useEffect(() => {
-      axios.get('http://localhost:3002/getActiveStudents')
+      axios.get('https://oceancreaturesv10.onrender.com/getActiveStudents')
       .then(result => setUsers(result.data))
       .catch(err => console.log(err))
    }, [])
@@ -71,7 +71,7 @@ function Attendance() {
   
     console.log(requestData);
     axios
-      .post('http://localhost:3002/createUsersSchedulerlist', requestData)
+      .post('https://oceancreaturesv10.onrender.com/createUsersSchedulerlist', requestData)
       .then((result) => {
         console.log(result);
         alert('Successfully Submitted');

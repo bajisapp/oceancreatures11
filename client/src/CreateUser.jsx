@@ -42,7 +42,7 @@ function CreateUser() {
  const Submit = (e) => {
     console.log('hello')
     e.preventDefault();
-    axios.post('http://localhost:3002/createUsers', {StudentFullName, UsedName,  Mother, Father, ClassLocation, ClassDay, ClassTime, ClassDuration, Age, Standard,Status ,EndDate, CertificationAttained, Birthdate, BirthYear, NRIC})
+    axios.post('https://oceancreaturesv10.onrender.com/createUsers', {StudentFullName, UsedName,  Mother, Father, ClassLocation, ClassDay, ClassTime, ClassDuration, Age, Standard,Status ,EndDate, CertificationAttained, Birthdate, BirthYear, NRIC})
     .then(result => {
         console.log(result)
         alert('Successfully regiser')

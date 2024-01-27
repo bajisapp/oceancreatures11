@@ -48,7 +48,7 @@ function UpdateUser() {
      const [NRIC, setNRIC] = useState()
 
      useEffect(() => {
-      axios.get('http://localhost:3002/getUsers/'+id)
+      axios.get('https://oceancreaturesv10.onrender.com/getUsers/'+id)
       .then(result => {console.log(result)
      setStudentFullName(result.data.StudentFullName)
 
@@ -89,7 +89,7 @@ function UpdateUser() {
    const Update = (e) => {
     console.log('hello')
     e.preventDefault();
-    axios.put('http://localhost:3002/updateUser/'+id, {StudentFullName, UsedName,  Mother, Father, ClassLocation, ClassDay, ClassTime, ClassDuration, Age, Standard,Status ,EndDate, CertificationAttained, Birthdate, BirthYear, NRIC})
+    axios.put('https://oceancreaturesv10.onrender.com/updateUser/'+id, {StudentFullName, UsedName,  Mother, Father, ClassLocation, ClassDay, ClassTime, ClassDuration, Age, Standard,Status ,EndDate, CertificationAttained, Birthdate, BirthYear, NRIC})
     .then(result => {
        console.log(result)
        setShowAlert(true); // Set state to show the alert
