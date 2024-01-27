@@ -93,7 +93,8 @@ function UpdateUser() {
     .then(result => {
        console.log(result)
        setShowAlert(true); // Set state to show the alert
-       navigate('/home')
+       Alert("Successfully updated ")
+       navigate('/')
  
     })
     .catch(err => console.log(err))
