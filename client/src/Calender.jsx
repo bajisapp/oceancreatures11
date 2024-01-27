@@ -59,7 +59,7 @@ function Calender() {
 
 
     useEffect(() => {
-      axios.get('http://localhost:3002/getUserslist')
+      axios.get('https://oceancreaturesv10.onrender.com/getUserslist')
         .then((response) => {
           const events = response.data.map((user) => {
             // Ensure user.Date and user.ClassTime are valid strings in ISO 8601 format
@@ -168,7 +168,7 @@ console.log(formattedEndTime); // Output: 20:30:00
     const remarksData = { Status: Statusresult, Remarks: Remarks }; // Assuming Remarks is defined
 
     axios
-        .put(`http://localhost:3002/updateattendance/${_id}`, remarksData)
+        .put(`https://oceancreaturesv10.onrender.com/updateattendance/${_id}`, remarksData)
         .then((result) => {
             console.log('id:', _id)
             console.log('Remarks:', Remarks);
@@ -191,7 +191,7 @@ const Updateabsent = (e) => {
   const remarksData = { Status: Statusresult, Remarks: Remarks }; 
 
   axios
-      .put(`http://localhost:3002/updateattendance/${_id}`, remarksData)
+      .put(`https://oceancreaturesv10.onrender.com/updateattendance/${_id}`, remarksData)
       .then((result) => {
           console.log('id:', _id)
           console.log('Remarks:', Remarks);

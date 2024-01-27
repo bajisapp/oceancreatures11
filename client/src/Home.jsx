@@ -27,7 +27,7 @@ function Home() {
 
 
    const handleDelete = (id) => {
-    axios.delete('http://localhost:3002/deleteUser/'+id)
+    axios.delete('https://oceancreaturesv10.onrender.com/deleteUser/'+id)
     .then(res => {console.log(res)
        window.location.reload()})
     .catch(errr => console.log(errr))
