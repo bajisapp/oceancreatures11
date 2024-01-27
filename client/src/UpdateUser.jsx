@@ -157,7 +157,7 @@ function UpdateUser() {
     <input type='text' placeholder='' className='form-control' value={ClassTime} onChange={(e) => setClassTime(e.target.value)} />
     </div>
     <div class="col">
-    <label for="exampleInputPassword1" class="form-label"> Class Duration</label>
+    <label for="exampleInputPassword1" class="form-label"> Class Duration .</label>
     <input type='text' placeholder='' className='form-control' value={ClassDuration} onChange={(e) => setClassDuration(e.target.value)} />
     </div>
     </div>
