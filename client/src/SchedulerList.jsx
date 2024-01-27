@@ -21,7 +21,7 @@ function SchedulerList() {
     const localizer = momentLocalizer(moment)
 
    useEffect(() => {
-      axios.get('http://localhost:3002/getUserslist')
+      axios.get('https://oceancreaturesv10.onrender.com/getUserslist')
       .then(calenderlist => setcalenderlist(calenderlist.data))
       .catch(err => console.log(err))
    }, [])

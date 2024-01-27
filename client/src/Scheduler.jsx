@@ -130,7 +130,7 @@ function Schedulerdev () {
 
 
     useEffect(() => {
-      axios.get('http://localhost:3002/getUserslist')
+      axios.get('https://oceancreaturesv10.onrender.com/getUserslist')
         .then((response) => {
           const events = response.data.map((user) => {
             // Ensure user.Date and user.ClassTime are valid strings in ISO 8601 format
