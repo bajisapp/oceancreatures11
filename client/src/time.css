@@ -50,7 +50,7 @@ body {
       text-overflow: initial;
     }
     .popup {
-      position: absolute;
+     /* position: absolute;
       left: 50%;
       margin-top: 50%;
       transform: translate(-50%,-50%);
@@ -63,7 +63,17 @@ body {
       border-radius: 8px;
       z-index: 5000;
       color: #fff;
-      border: 1px solid #9E9E9E;
+      border: 1px solid #9E9E9E; */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
   }
   }
 
