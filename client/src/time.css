@@ -112,10 +112,9 @@ body {
     display: none; /* Hide small screen content on big screens */
   }
   .rbc-btn-group {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
-
 .popup-inner {
   background-color: white;
   padding: 10px;
