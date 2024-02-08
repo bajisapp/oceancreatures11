@@ -35,13 +35,14 @@ function Calender() {
       setSelectedEvent(selectedEvents); 
       setShowPopup(true); 
     };
+    
     const closePopup = () => {
       setSelectedEvent(null);
       setShowPopup(false);
     };
 
     useEffect(() => {
-      axios.get('http://localhost:3002/getUserslist')
+      axios.get('https://oceancreaturesv10.onrender.com/getUserslist')
         .then((response) => {
           const events = response.data.map((user) => {
             const combinedDateTime = `${user.Date}T${user.ClassTime}`;
@@ -120,7 +121,7 @@ const Update = (e) => {
     const _id = selectedEvent._id;
     const remarksData = { Status: Statusresult, Remarks: Remarks };    
     axios
-      .put(`http://localhost:3002/updateattendance/${_id}`, remarksData)
+      .put(`https://oceancreaturesv10.onrender.com/updateattendance/${_id}`, remarksData)
       .then((result) => {
         console.log('id:', _id);
         console.log('Remarks:', Remarks);
@@ -144,7 +145,7 @@ const Updateabsent = (e) => {
     const _id = selectedEvent._id;
     const remarksData = { Status: Statusresult, Remarks: Remarks };
     axios
-      .put(`http://localhost:3002/updateattendance/${_id}`, remarksData)
+      .put(`https://oceancreaturesv10.onrender.com/updateattendance/${_id}`, remarksData)
       .then((result) => {
         console.log('id:', _id);
         console.log('Remarks:', Remarks);

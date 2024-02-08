@@ -12,7 +12,7 @@ import 'react-big-calendar/lib/css/react-big-calendar.css';
 
 
 
-function Table() {
+function SchedulerList() {
 
     const navigate = useNavigate()
 
@@ -21,7 +21,7 @@ function Table() {
     const localizer = momentLocalizer(moment)
 
    useEffect(() => {
-      axios.get('http://localhost:3002/getUserslist')
+      axios.get('https://oceancreaturesv10.onrender.com/getUserslist')
       .then(calenderlist => setcalenderlist(calenderlist.data))
       .catch(err => console.log(err))
    }, [])
@@ -106,4 +106,4 @@ function Table() {
   )
 }
 
-export default Table
+export default SchedulerList
