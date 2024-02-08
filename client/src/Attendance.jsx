@@ -94,8 +94,8 @@ function Attendance() {
   return (
     <div className='w-80'>
       <div className='row'>
-        <div className='col-2'></div>
-        <div className='col-8'>
+      
+        <div className='col-12'>
     <h6>Active Student List</h6>
     <div>
     <button type="button" className="btn btn-sm btn-primary" onClick={handleShowModal}>  Create Scheduler </button>
@@ -144,7 +144,7 @@ function Attendance() {
 
     </table>
     </div>
-    <div className='col-2'></div>
+
     </div>
     <Modal show={showModal} onHide={handleCloseModal} style={{fontSize:'13px'}}>
         <Modal.Header closeButton>

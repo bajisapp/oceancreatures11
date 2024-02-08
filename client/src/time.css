@@ -22,22 +22,6 @@
 body {
     background-color: #ebf2fb;
 }
-.popup {
-    position: absolute;
-    left: 50%;
-    margin-top: 20%;
-    transform: translate(-50%,-50%);
-    background-color: #f7f7f7;
-    color: #fff;
-    width: 90%;
-    max-width: 380px;
-    max-height: 400px;
-    padding: 20px;
-    border-radius: 8px;
-    z-index: 5000;
-    color: #fff;
-    border: 1px solid #9E9E9E;
-  }
 
 
   .selected {
@@ -55,6 +39,7 @@ body {
       overflow: hidden;
       text-overflow: ellipsis;
     }
+
   }
   
   /* Media query for small screens */
