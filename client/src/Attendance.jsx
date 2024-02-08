@@ -17,11 +17,10 @@ function Attendance() {
         const [selectedDate, setSelectedDate] = useState(new Date());
         const [startDate, setStartDate] = useState('');
         const [selectedTime, setSelectedTime] = useState('');
-        const [reason, setreason] =  useState('');
- 
+        const [reason, setreason] =  useState(''); 
 
    useEffect(() => {
-      axios.get('https://oceancreaturesv10.onrender.com/getActiveStudents')
+      axios.get('http://localhost:3002/getActiveStudents')
       .then(result => setUsers(result.data))
       .catch(err => console.log(err))
    }, [])
@@ -58,6 +57,8 @@ function Attendance() {
   console.log(selectedDate);
     const requestData = selectedUsers.map((userId) => {
       const user = result.find((u) => u._id === userId); // Find the user object by _id
+      //alert(user.ClassLocation)
+    //  alert(user.ClassDay)
       return {
         UserID: userId, // Use the userId from the selectedUsers array
         Name: user ? user.StudentFullName : '', // Access StudentFullName from found user object
@@ -65,17 +66,22 @@ function Attendance() {
         ClassTime: selectedTime,
         ClassDuration: user ? user.ClassDuration : '', 
         Status: 'none',
-        Remarks: 'N/A'// Access ClassDuration from found user object
+        Remarks: 'N/A',
+        ClassLocation: user.ClassLocation,
+        ClassDay: user.ClassDay   // Access ClassDuration from found user object
       };
     });
-  
+  console.log("test data");
     console.log(requestData);
+    
     axios
-      .post('https://oceancreaturesv10.onrender.com/createUsersSchedulerlist', requestData)
+      .post('http://localhost:3002/createUsersSchedulerlist', requestData)
       .then((result) => {
         console.log(result);
         alert('Successfully Submitted');
-        navigate('/schedulerList');
+        window.location.reload(); // or window.location.href = window.location.href;
+
+       // navigate('/attendance');
       })
       .catch((error) => {
         console.error('Error creating scheduler list:', error);
@@ -92,9 +98,7 @@ function Attendance() {
         <div className='col-8'>
     <h6>Active Student List</h6>
     <div>
-    <button type="button" className="btn btn-sm btn-primary" onClick={handleShowModal}>
-        Create Scheduler
-      </button>
+    <button type="button" className="btn btn-sm btn-primary" onClick={handleShowModal}>  Create Scheduler </button>
       </div>
     <table className='table'>
       <thead className='table-dark'>
@@ -147,7 +151,7 @@ function Attendance() {
           <Modal.Title style={{fontSize:'18px'}}>Select Date & Time </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <p style={{display:"none"}} >
+          <p style={{}} >
             Selected User IDs: {selectedUsers.join(', ')}
           </p>
        {/*   <p>
@@ -161,6 +165,7 @@ function Attendance() {
   Student Name : {result
     .filter(user => selectedUsers.includes(user._id))
     .map((user, index) => (
+      <div>
       <span
         key={user._id}
         style={{
@@ -170,7 +175,10 @@ function Attendance() {
         }}
       >
         {user.StudentFullName}
+      
       </span>
+      <span>{user.ClassLocation}</span>
+      </div>
     ))}
 </p>
 

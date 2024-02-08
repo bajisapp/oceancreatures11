@@ -13,6 +13,9 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Tablelist from './Tablelist'
+import Classdetails from './Classdetails'
+
 
 function Navbars() {
   return (
@@ -28,14 +31,18 @@ function Navbars() {
             <Nav.Link href="#home">
             <Link className="nav-link" to="/" element={ <Home /> } classNameName='link'> Home</Link>
             </Nav.Link>
-            <Nav.Link href="#link">  <Link className="nav-link" to="/attendance" element={ <Attendance /> } classNameName='link'> Add Class</Link></Nav.Link>
+            <Nav.Link href="#link">  <Link className="nav-link" to="/attendance" element={ <Attendance /> } classNameName='link'> Add-Class</Link></Nav.Link>
 
             <Nav.Link href="#home">
             <Link className="nav-link" to="/calender" element={ <Calender /> } classNameName='link'>Calender</Link>
             </Nav.Link>
             <Nav.Link href="#home">
-            <Link className="nav-link" to="/schedulerList" element={ <BigCalendar />  } classNameName='link'>  Attendance List</Link>
+            <Link className="nav-link" to="/schedulerList" element={ <BigCalendar />  } classNameName='link'>  Remarks</Link>
             </Nav.Link>
+            <Nav.Link href="#home">
+            <Link className="nav-link" to="/tablelist" element={ <Tablelist /> } classNameName='link'>  Attendance-Status</Link>
+            </Nav.Link>
+
           </Nav>
         </Navbar.Collapse>
       </Container>

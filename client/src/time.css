@@ -25,16 +25,95 @@ body {
 .popup {
     position: absolute;
     left: 50%;
-    margin-top: -20%;
+    margin-top: 20%;
     transform: translate(-50%,-50%);
-    background-color: #000;
+    background-color: #f7f7f7;
     color: #fff;
-    width: 80%;
-    max-width: 400px;
-    max-height: 300px;
+    width: 90%;
+    max-width: 380px;
+    max-height: 400px;
     padding: 20px;
     border-radius: 8px;
     z-index: 5000;
     color: #fff;
     border: 1px solid #9E9E9E;
   }
+
+
+  .selected {
+   /* background-color: #4caf50;  Green color */
+    color: white;
+  /*   padding: 2px;*/
+    border-radius: 5px;
+  }
+
+
+/* Media query for big screens */
+@media screen and (min-width: 401px) {
+    .bigscreen .truncate-text {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+  
+  /* Media query for small screens */
+  @media screen and (max-width: 400px) {
+    .smallscreen .truncate-text {
+      white-space: normal;
+      overflow: visible;
+      text-overflow: initial;
+    }
+    .popup {
+      position: absolute;
+      left: 50%;
+      margin-top: 50%;
+      transform: translate(-50%,-50%);
+      background-color: #f7f7f7;
+      color: #fff;
+      width: 90%;
+      max-width: 380px;
+      max-height: 400px;
+      padding: 20px;
+      border-radius: 8px;
+      z-index: 5000;
+      color: #fff;
+      border: 1px solid #9E9E9E;
+  }
+  }
+
+/* Define styles for small screens */
+@media (max-width: 600px) {
+  .full-name {
+    display: none; /* Hide full name on small screens */
+  }
+  
+  .small-screen {
+    display: inline; /* Display small screen content */
+  }
+  .rbc-btn-group {
+    font-size: 9px;
+  }
+}
+
+/* Define styles for big screens */
+@media (min-width: 601px) {
+  .full-name {
+    display: inline; /* Display full name on big screens */
+  }
+  
+  .small-screen {
+    display: none; /* Hide small screen content on big screens */
+  }
+  .rbc-btn-group {
+    font-size: 12px;
+  }
+}
+
+.popup-inner {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10000;
+  min-height: 350px;
+}

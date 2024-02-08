@@ -4,13 +4,13 @@
 .popup {
   position: fixed;
   left: 50%;
-  margin-top: -20%;
+  margin-top: 20%;
   transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255);
-  width: 80%;
+  background-color: #f7f7f7;
+  width: 90%;
   max-width: 400px;
-  max-height: 300px;
-  padding: 20px;
+  max-height: 360px;
+  padding: 10px;
   border-radius: 8px;
   z-index: 999;
   color: rgb(0, 0, 0);
@@ -46,7 +46,7 @@
 /* Add transition effect for smoother appearance */
 .popup-inner {
   transition: all 0.3s ease-in-out;
-  background-color: black;
+ /*  background-color: black;*/
 }
 
 /* Modal.css */
@@ -84,4 +84,64 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+/* Default styling for big screens */
+.big-screen {
+  display: inline; /* or display: inline-block; depending on your layout */
+}
+
+/* Hide on small screens */
+@media (max-width: 600px) {
+  .big-screen {
+      display: none;
+  }
+
+  /* Display on small screens */
+  .small-screen {
+      display: inline; /* or display: inline-block; depending on your layout */
+  }
+}
+.selected {
+ /*  background-color: #4caf50; Green color */
+  color: white;
+ /*  padding: 6px;*/
+  border-radius: 5px;
+}
+
+
+/* Define styles for small screens */
+@media (max-width: 600px) {
+  .full-name {
+    display: none; /* Hide full name on small screens */
+  }
+  
+  .small-screen {
+    display: inline; /* Display small screen content */
+  }
+  .rbc-btn-group {
+    font-size: 9px;
+  }
+}
+
+/* Define styles for big screens */
+@media (min-width: 601px) {
+  .full-name {
+    display: inline; /* Display full name on big screens */
+  }
+  
+  .small-screen {
+    display: none; /* Hide small screen content on big screens */
+  }
+  .rbc-btn-group {
+    font-size: 12px;
+  }
+}
+
+
+.popup-inner {
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 10000;
+  min-height: 350px;
 }

@@ -9,7 +9,7 @@ import './time.css';
 
 
 
-function Calender() {
+function Classdetails() {
 
   const [Remarks, setRemarks] = useState(''); 
     const navigate = useNavigate()
@@ -35,6 +35,7 @@ function Calender() {
       setSelectedEvent(selectedEvents); 
       setShowPopup(true); 
     };
+    
     const closePopup = () => {
       setSelectedEvent(null);
       setShowPopup(false);
@@ -168,31 +169,11 @@ const Updateabsent = (e) => {
   <button className="btn btn-dark btn-sm" style={{marginBottom:'10px'}} onClick={handleSubmit}>
        Submit
       </button>
-      <Calendar
-  localizer={localizer}
-  events={calendarEvents}
-  views={{ month: true, week: false, day: false, agenda: true }}
-  min={new Date(0, 0, 0, 9, 0, 0)}
-  max={new Date(0, 0, 0, 20, 0, 0)}
-  defaultView="agenda" 
-  startAccessor="start"
-  showAllEvents={true}
-  step={30} 
-  timeslots={2} 
-  defaultDate={new Date()} 
-  selectable={true}
-  endAccessor="end"
-  length={7} 
-  style={{ height: 800, fontSize: '11px' }}
-  components={{
-    agenda: {
-      event: CustomAgenda,
-      //agenda: CustomAgendas,
-    },
-  }}
-/>
 </div>
 </div>
+<div class="col-12">
+  <h2>Test</h2>
+  </div>
 </div>
  
  
@@ -242,4 +223,4 @@ const Updateabsent = (e) => {
   )
 }
 
-export default Calender
+export default Classdetails

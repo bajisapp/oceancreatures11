@@ -17,6 +17,8 @@ import BitScheduler from './BitScheduler'
 import SchedulerList from './SchedulerList'
 
 import './time.css'
+import Tablelist from './Tablelist.jsx'
+import Classdetails from './Classdetails.jsx'
 
 
 
@@ -34,6 +36,8 @@ function App() {
       <Route path='/attendance' element={<Attendance /> }></Route>
       <Route path='/calender' element={ <Calender /> }></Route>
       <Route path='/schedulerList' element={ <SchedulerList /> }></Route>      
+      <Route path='/tablelist' element={ <Tablelist/>  }></Route>
+      <Route path='/classdetails' element={ <Classdetails />}></Route>
 
     </Routes>
  

@@ -14,7 +14,12 @@ const EmployeeSchema = new mongoose.Schema({
 
     "Status" : String,
     
-    "Remarks" : String
+    "Remarks" : String,
+
+    "ClassLocation" : String,
+
+    "ClassDay": String
+
 })
 
 const EmployeeModel = mongoose.model("employees", EmployeeSchema)
